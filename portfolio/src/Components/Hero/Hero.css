@@ -1,3 +1,4 @@
+
 .hero{
     width: 100%;
     min-height: 100vh;
@@ -6,4 +7,30 @@
     background-position: center;
     color: white;
     
+    display: flex;
+    align-items: center;
 }
+.hero-text{
+    text-align: left;
+    max-width: 800px;
+
+}
+.hero-text h1{
+    font-size: 80px;
+
+}
+.hero-text h2{
+    font-size: 25px;
+}
+.hero-text p{
+    padding-bottom: 10px;
+    line-height: 1.4;
+}
+.btn{
+    margin-top: 20px;
+}
+.btn .Arrow{
+    width: 30px;
+    margin-left: 10px;
+}
+
