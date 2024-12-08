@@ -1,0 +1,7 @@
+
+:root { 
+    --primary-color: hsl(0, 0%, 0%); /* Dark theme primary color */ 
+    --accent-color: #1d0138; /* Accent color */ 
+    --text-color: white; /* Text color */ 
+    --background-color: #5c5959; /* Background color */
+}
