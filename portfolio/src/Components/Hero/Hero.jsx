@@ -15,7 +15,7 @@ function Hero() {
       <p>
         Designing and bringing your project Alive and responsive 
       </p>
-      <button className='btn'>
+      <button className='btn btn2'>
         Explore more <img  src={dark_arrow} alt="" className='Arrow'/>
       </button>
     </div>

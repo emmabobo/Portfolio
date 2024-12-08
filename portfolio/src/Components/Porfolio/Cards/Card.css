@@ -1,0 +1,49 @@
+/*.card-container{
+    position: relative;
+    color: white;
+    
+}
+.card-image{
+    width: 350px;
+    
+        
+
+}
+
+.card-title{
+  
+}
+.card-text{
+    position: absolute;
+    top: 70%;
+    left:4%;
+    z-index: 100;
+    max-width: 250px;
+    text-align: center;
+}
+.card-para , .btn-card{
+    display: none;
+}
+
+add gredient with ai genreted photo*/
+
+.card-container{
+    height: auto;
+    
+
+    /*background-color: transparent;
+    box-shadow: 0 4px 5px 3px rgbs(119,53,136,.45);
+    
+    transition: all .5s ease;
+    */
+    border: 2px solid green;
+    
+}
+.card-body{
+    
+    
+}
+.card-img-top{
+    width: 300px;
+    
+}

@@ -9,7 +9,8 @@
 
 }
 body{
-    background: grey;
+    color: white;
+    background:black;
 }
 a{
     text-decoration: none;
@@ -20,6 +21,7 @@ a{
 .container{
     padding-left: 10%;
     padding-right: 10%;
+    border: 2px solid red;
 }
 .btn{
     background: #ffff;
