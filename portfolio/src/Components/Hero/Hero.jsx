@@ -7,10 +7,10 @@ function Hero() {
    <div className="hero container">
     <div className="hero-text">
       <h1>
-        You need a Web Project ?.
+        Emmanuel Ala.
       </h1>
       <h2>
-      you Got a Developer needed for all your project 
+      Software Engineer, Front End & App Development
       </h2>
       <p>
         Designing and bringing your project Alive and responsive 

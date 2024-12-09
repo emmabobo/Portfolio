@@ -1,5 +1,22 @@
 .card-layout{
-    display: grid;
-    gap: auto;
-    grid-template-columns: repeat(3  , 1fr);
+    display:flex;
+        flex-direction:row;
+        align-items:stretch;
+        overflow:hidden;
+  
+        min-width:600px;
+        max-width:900px;
+        width:calc(100% - 100px);
+        
+        height:400px;
+        
+        @for $i from 1 through 4 {
+           @media screen and (max-width:798px - $i*80) {
+              min-width:600px - $i*80;
+              .option:nth-child(#{6-$i}) {
+                 display:none;
+              }
+           }
+        }
+} 
 }

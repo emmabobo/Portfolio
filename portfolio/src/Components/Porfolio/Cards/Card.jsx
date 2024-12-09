@@ -3,20 +3,21 @@ import "./Card.css"
 
 function Card(props) {
   return (
-    <div className="card-container">
-        <img className='card-img-top marg-down' src={props.cardImage} alt="card image" />
-        <p className='card-text marg-down'>For CSS Grid expertise:
-              Rachel Andrew: https://gridbyexample.com/
-              Jen Simmons: http://labs.jensimmons.com/
-        </p>
-        <a href=""><button className='btn marg-down'> Git</button></a>
-        
-  
+    <div className="option active">
+      <div className="shadow"></div>
+      <div className="label">
+        <div className="icon">
+          <i class="fas fa-walking"></i>
+        </div>
+        <div className="info">
+          <div className="main_i"> Bold text</div>
+          <div className="sub_1">bold text label </div>
+        </div>
+      </div>        
     </div>
   )
 }
 
 export default Card
 
-          
           
