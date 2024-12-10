@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 100vh;
     
-    background:linear-gradient(rgba(10, 10, 10, 0.281),rgba(4, 1, 27, 0.7)), url('../../assets/hero.jpg');/*add gredient with ai genreted photo*/
+    background:linear-gradient(rgba(10, 10, 10, 0.281),rgba(4, 1, 27, 0.7)), url('../../assets/hero.jpg'),black;/*add gredient with ai genreted photo*/
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,8 +34,5 @@
     line-height: 3em;
 }
 
-.btn2 .Arrow{
-    width: 30px;
-    margin-left: 10px;
-}
+
 

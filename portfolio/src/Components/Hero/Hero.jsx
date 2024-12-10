@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Hero.css"
-import dark_arrow from "../../assets/dark-arrow.png"
+
 
 function Hero() {
   return (
@@ -16,7 +16,7 @@ function Hero() {
         Designing and bringing your project Alive and responsive 
       </p>
       <button className='btn btn2'>
-        Explore more <img  src={dark_arrow} alt="" className='Arrow'/>
+        Explore more 
       </button>
     </div>
    </div>
