@@ -10,7 +10,7 @@ function Card(props) {
           <i class="fas fa-walking"></i>
         </div>
         <div className="info">
-          <div className="main_i"> Bold text</div>
+          <div className="main_i"> Bold text</div> 
           <div className="sub_1">bold text label </div>
         </div>
       </div>        
