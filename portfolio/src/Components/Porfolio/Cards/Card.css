@@ -1,53 +1,29 @@
-/*.card-container{
-    position: relative;
-    color: white;
-    
-}
-.card-image{
-    width: 350px;
-    
-        
-
-}
-
-.card-title{
+.card-container{
+  position: relative;
   
+
+}
+.card-container img{
+  width: 40em;
+  border-radius: 10%;
 }
 .card-text{
+  width: 40em;
+  padding: 1.5em; 
+}
+.card-head{
+  text-align: center;
+  
+}
+
+.card-container:hover{
+  .card-text{
     position: absolute;
-    top: 70%;
-    left:4%;
-    z-index: 100;
-    max-width: 250px;
-    text-align: center;
-}
-.card-para , .btn-card{
-    display: none;
-}
-
-add gredient with ai genreted photo*/
-
-.card-container {
-    border: 2px solid yellow;
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color:transparent;
-    box-shadow: 0 4px 5px 3px rgbs(119,53,136,.45);
-    
-} 
-
-.card-img-top{
-    width: 300px;
-    border-radius: 24px;
-    margin-top: 20px;
-    
-
-}
-.marg-down{
-    margin-bottom: 20px;
+    top: 30%;
+    bottom: 0;
+  
+    width: 40em;
+    padding: 1.5em; 
+    transition:position 2s ease-in;
+  }
 }

@@ -3,20 +3,18 @@ import "./Card.css"
 
 function Card(props) {
   return (
-    <div className="card-container">
-        <img className='card-img-top marg-down' src={props.cardImage} alt="card image" />
-        <p className='card-text marg-down'>For CSS Grid expertise:
-              Rachel Andrew: https://gridbyexample.com/
-              Jen Simmons: http://labs.jensimmons.com/
+    <div className='card-container'>
+      <img src={props.ImageCard} alt="" />
+      <div className="card-text">
+        <h1 className="card-head">
+          {props.CardHeader} 
+        </h1>
+        <p className="card-para">
+          {props.CardParagraph}
         </p>
-        <a href=""><button className='btn marg-down'> Git</button></a>
-        
-  
+      </div>
     </div>
-  )
+  );
 }
 
-export default Card
-
-          
-          
+export default Card;

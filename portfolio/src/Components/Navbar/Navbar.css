@@ -7,14 +7,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content:space-between ;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2.5em 0;
     background: var(--primary-color);
     
 }
 
 .logo_wide{
-    width: 15em;
+    width: 25em;
 }
 .logo_mobile , .menu{
     width: 3em;
@@ -26,22 +25,29 @@ nav{
 .nav-list{
     display: flex;
     justify-content: space-between;
-    gap: 2.2em;
+    gap: 2.4em;
+    
+    
 }
 .list{
     list-style: none;
+    
+    
 }
 .list a{
-    font-size: 1.4em;
+    text-decoration: none;
+    font-size: 2em;
 }
 .list a:hover{
     border-bottom: .4em var(--accent-color) solid;
-    font-size:1.5em ;
+    font-size:2.1em ;
     font-weight: bold;
 }
+
 .btn-cv{
     font-weight: bolder;
 }
+
 .btn-cv:hover{
     color: var(--accent-color);
     background:var(--text-color);

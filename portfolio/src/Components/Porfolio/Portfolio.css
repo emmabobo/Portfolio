@@ -1,5 +1,21 @@
-.card-layout{
-    display: grid;
-    gap: auto;
-    grid-template-columns: repeat(3  , 1fr);
+.portfolio{
+   display: grid; 
+   grid-auto-columns:auto;
+   position: relative;
 }
+.portfolio-header{
+   text-align: center;
+   font-size: 4em;
+   font-weight: 800;
+   margin: 1.5em;
+}
+
+.portfolio-cards{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr ;
+}
+.portfolio-More{
+   text-align: right ;
+
+}
+

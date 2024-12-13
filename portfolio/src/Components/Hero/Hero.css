@@ -2,33 +2,37 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(8,0,58,.7),rgba(8,0,58,.7)) ,url('../../assets/hero.png');/*add gredient with ai genreted photo*/
-    background-size: cover;
+    
+    background:linear-gradient(rgba(10, 10, 10, 0.281),rgba(4, 1, 27, 0.7)), url('../../assets/hero.jpg'),black;/*add gredient with ai genreted photo*/
+    background-size: contain;
     background-position: center;
-    color: white;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    
+    color:var(--text-color);
     
     display: flex;
     align-items: center;
+
+
+
+    /*linear-gradient(rgba(8,0,58,.7),rgba(8,0,58,.7)) */
 }
 .hero-text{
     text-align: left;
-    max-width: 800px;
 
 }
 .hero-text h1{
-    font-size: 80px;
+    font-size: 16em;
 
 }
 .hero-text h2{
-    font-size: 25px;
+    font-size: 6em;
 }
 .hero-text p{
-    padding-bottom: 10px;
-    line-height: 1.4;
+    font-size: 2em ;
+    line-height: 3em;
 }
 
-.btn2 .Arrow{
-    width: 30px;
-    margin-left: 10px;
-}
+
 
