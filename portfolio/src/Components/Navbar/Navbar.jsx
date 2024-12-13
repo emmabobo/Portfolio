@@ -29,9 +29,6 @@ function Navbar() {
   },[lastScroll]);
 
 
-  
-  const ToggleMenu = () =>{
-
 
   return (
     <nav className="container" id='navbar'>
@@ -51,14 +48,9 @@ function Navbar() {
 
       <button className='btn btn-cv'>Download CV</button>
   
-      
-
-      <div className="menu-container " onClick={ToggleMenu} >
-        <img className='menu' src={menu} alt="hamburger-menu" />
-      </div>
 
     </nav>
   )
-}}
+}
 
 export default Navbar
