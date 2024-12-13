@@ -31,8 +31,8 @@ function Navbar() {
 
   
   const ToggleMenu = () =>{
-    const NavList = document.getElementsById('menu-list ');
-    NavLink.style.display = (NavLink.style.display) === "flex "? "none": "flex";
+    const NavList = document.getElementsByClassName('nav-list');
+    NavList.style.display = NavList.style.display === "flex"? "none": "flex";
   }
 
 
@@ -56,7 +56,7 @@ function Navbar() {
   
       
 
-      <div className="menu-container " >
+      <div  className="menu-container " >
         <img onClick={ToggleMenu} className='menu' src={menu} alt="hamburger-menu" />
       </div>
 
