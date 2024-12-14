@@ -3,5 +3,9 @@
     --primary-color: hsl(0, 0%, 0%); /* Dark theme primary color */ 
     --accent-color: #1d0138; /* Accent color */ 
     --text-color: white; /* Text color */ 
+    --text-color-grey:rgb(165, 161, 161);
     --background-color: #5c5959; /* Background color */
+    --test-color1:rgb(35, 11, 67);
+    --test-color2:rgb(3, 18, 106);
+    --background-button: linear-gradient(to left, #120113, #2a07db);
 }

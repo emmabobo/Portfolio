@@ -1,38 +1,76 @@
 
 .hero{
     width: 100%;
-    min-height: 100vh;
-    
-    background:linear-gradient(rgba(10, 10, 10, 0.281),rgba(4, 1, 27, 0.7)), url('../../assets/hero.jpg'),black;/*add gredient with ai genreted photo*/
-    background-size: contain;
+    height: 100vh;
+    background:linear-gradient(rgba(10, 10, 10, 0.281),rgba(4, 1, 27, 0.7)), url('../../assets/hero.jpg'),black;
     background-position: center;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    
-    color:var(--text-color);
-    
+    background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
-
-
+    justify-content: center;
+    text-align: center;
 
     /*linear-gradient(rgba(8,0,58,.7),rgba(8,0,58,.7)) */
 }
-.hero-text{
-    text-align: left;
+.hero h1{
+    font-size: 3em;
 
 }
-.hero-text h1{
-    font-size: 16em;
-
+.hero h2{
+    font-size: 1.2em;
 }
-.hero-text h2{
-    font-size: 6em;
-}
-.hero-text p{
-    font-size: 2em ;
+.hero p{
+    font-size: 1em ;
     line-height: 3em;
 }
+
+@media (min-width: 425px){
+    .hero h1{
+        font-size: 4em;
+    
+    }
+    .hero h2{
+        font-size: 1.4em;
+    }
+    .hero p{
+        font-size: 1.5em ;
+        line-height: 3em;
+    }
+}
+
+@media (min-width: 768px){
+    .hero{
+        align-items: flex-start;
+    }
+    .hero h1{
+        font-size: 6em;
+    
+    }
+    .hero h2{
+        font-size: 2.5em;
+    }
+    .hero p{
+        font-size: 1.6em ;
+        line-height: 3em;
+    }
+}
+@media (min-width: 1024px){
+   
+    .hero h1{
+        font-size: 8em;
+    
+    }
+    .hero h2{
+        font-size: 3em;
+    }
+    .hero p{
+        font-size: 2em ;
+    
+    }
+}
+
+
 
 
 

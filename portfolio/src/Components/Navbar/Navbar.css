@@ -1,106 +1,199 @@
-nav{
+.nav-container{
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    display: flex;
-    align-items: center;
-    justify-content:space-between ;
-    padding: 2.5em 0;
-    background: var(--primary-color);
-    color: white;
-    
-}
-
-.logo_wide{
-    width: 25em;
-}
-.logo_mobile , .menu{
-    width: 3em;
-
-}
-.menu-container, .logo_mobile{
-    display: none;
-}
-.nav-list{
+    height: 4em;
     display: flex;
     justify-content: space-between;
-    gap: 2.4em;
-    
-    
+    align-items: center;
+    position: relative;
+    top: 0;
+    left:0;
+    right:0;    
+    background:hsla(0, 0%, 0%, 0.833); 
+  
 }
+.nav-list{
+    display: none;
+}
+.logo_mobile, .menu-icon{
+    width: 2em;
+}
+.logo_wide{
+    width: 25em;
+    display: none;
+}
+.btn-cv{
+    display: none;
+}
+.mobileView{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:4em;
+    right: 0;
+    padding: 2em;
+    text-align: center;
+    color: var(--text-color);
+    background:hsla(0, 0%, 0%, 0.933); 
+    border-bottom-left-radius:2em ;
+    border-bottom-right-radius:2em ;
+
+    display: none;
+    
+    }
+.mobile-list{
+    margin-bottom: 2em;
+    margin-left: 2em;
+}
+.btn{
+    color: var(--text-color);
+    padding: .3em 1em;
+    border-radius:.8em;
+    font-size: 1.2em;
+    border: 0;
+    outline: 0;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-button);
+}
+
+
+@media (min-width: 768px){
+    .mobileView,.menu-icon{
+        display: none;
+    }
+    .nav-container{
+        height: 6em;
+    }
+    .nav-list,.btn-cv{
+        display: flex;
+    }
+    .nav-list{
+        gap: 1.3em;
+        font-size: large;
+       
+
+    }
+    .list .list-link{
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+  
+}
+@media (min-width: 1024px){
+    .nav-container{
+        height: 8em;
+        top: 0;
+        
+    .nav-list{
+        gap: 2em;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    
+    }
+    .list .list-link{
+        font-size: 1.4em;
+        text-decoration: none;
+        color: var(--text-color-grey);
+    }
+    .list .list-link:hover{
+        color: var(--text-color);
+    }
+    .list:hover{
+        border-bottom: 4px solid blue;
+    }
+    
+    .logo_mobile{display: none;}
+
+    .logo_wide{
+        display: flex;
+        width: 12em;
+    }
+    .btn:hover{
+        border: 1px white solid;
+    }
+}
+}
+/*
+.logo-container{
+}
+
+.logo_mobile, .menu-icon{
+    width: 3em;
+    display: none;
+}
+.btn-cv-mobile{
+    display: none;
+}
+
+
 .list{
     list-style: none;
-    
-    
+    padding: 0 2em;
 }
 .list a{
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .list a:hover{
-    border-bottom: .4em var(--accent-color) solid;
-    font-size:2.1em ;
-    font-weight: bold;
+    color: var(--text-color);
+    border-bottom: .5em var(--test-color2) solid;
 }
 
+.btnn{
+    font-size: 1.5em;
+    color: var(--text-color);
+}
 .btn-cv{
+    margin: 2px;
+    padding: .6em 1.2em;
+    border-radius: 8em;
+    cursor: pointer;
+    background: var(--background-button);
+    font-size: 1.3em;
     font-weight: bolder;
+    color: var(--text-color);
 }
 
 .btn-cv:hover{
-    color: var(--accent-color);
-    background:var(--text-color);
-    transform: scale(1.1);
+    border: 2px white solid;
 
 }
-/* Styles for extra small devices */ 
-@media (max-width: 576px){ 
-   .logo_wide{
-    display: none;
-   }
-   .btn-cv{
-    display: none;
-   }
-   .logo_mobile{
-    display: block;
-   }
-   .menu-container{
-    cursor: pointer;
-    display: block;
-   }
-
-   .nav-list{
-    display: "none";
-    flex-direction: column;
-    align-items: center;
-    gap: 2.2em;
-    position: absolute;
-    top:6.7em ;
-    left: 0;
-    right: 0;
-    padding-bottom: 1.6em;
-    
-    background:inherit;
-
-    
+ Styles for small devices
+@media screen and (max-width: 320px) {
+    .logo_wide,.btn-cv{
+        display: none;
     }
-    .nav-list .list{
-        border-bottom: 2px blue solid;
-    }
-
-
-   
-   
-    
-   
-} 
- /* Styles for small devices 
-@media (min-width: 576px) and (max-width: 768px) {
-    .nav-list, .btn-cv{
-        display: none;}
-    .menu-container{
+    .logo_mobile, .menu-icon{
         display: flex;
     }
-}*/ 
+    
+    .btn-cv-mobile{
+        display: flex;
+        color: var(--text-color);
+        background: none;
+        border: none;
+        margin-bottom: 2em;
+        padding: 0 1.3em;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:990px{
+    .logo_wide,.menu-icon{
+        display: none;
+    }
+    .logo_mobile, btn-cv{
+        display: flex;
+    }
+    .nav-list{
+        color: var(--text-color);
+    }
+    .list a{
+        font-size: 1.2em;
+    }
+    .btnn{
+        font-size:1.2em
+    }
+}
+    */
