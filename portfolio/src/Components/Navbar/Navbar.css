@@ -60,23 +60,44 @@
         gap: 2em;
         font-size: 2.5em;
     }
-    .nav-list .list .list-link:hover{
-        border-bottom: 2px solid red;
-    }
-    .btn-cv{
-        display: flex;
-    }
+   
+    
     .menu-icon_container{
         display: none;
     }
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
+    .nav-list .list .list-link{
+        color: var(--text-color-grey);
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    
+    .nav-list .list .list-link:hover{
+        color: var(--text-color);
+        border-bottom: 4px solid blue;
+        
+    }
     .logo_mobile {
         display: none;
     }
     .logo_wide{
         display: block;
         width: 13em;
+    }
+    .btn-cv{
+        display: flex;
+        background: linear-gradient(to right, rgb(21, 4, 127),rgb(63, 1, 43));
+        border: none;
+        padding: .6em 1.1em;
+        border-radius: .7em;
+        color: var(--text-color);
+        cursor: pointer;
+        font-weight: bold;
+
+    }
+    .btn-cv:hover{
+        background: linear-gradient(to right, rgb(40, 10, 231),rgb(128, 3, 88));
     }
 }
 
