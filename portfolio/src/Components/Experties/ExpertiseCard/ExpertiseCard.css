@@ -3,7 +3,8 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    
+    border: 2px red solid;
 }
 .E-icon{
    width: 10em; 

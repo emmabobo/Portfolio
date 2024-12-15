@@ -14,7 +14,7 @@
     box-sizing: border-box;
     font-family: "Funnel Sans", sans-serif;
     font-size: 10px;
-    overflow: hidden;
+    
 }
 
 body{
@@ -35,10 +35,6 @@ a{
     
 }
 @media (min-width: 768px){
-    .container{
-        padding-left: 10%;
-        padding-right: 10%;
-        
-    }
+   
 }
 

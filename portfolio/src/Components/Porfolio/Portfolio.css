@@ -1,21 +1,19 @@
-.portfolio{
-   display: grid; 
-   grid-auto-columns:auto;
-   position: relative;
-}
-.portfolio-header{
-   text-align: center;
-   font-size: 4em;
-   font-weight: 800;
-   margin: 1.5em;
-}
 
 .portfolio-cards{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr ;
+   display:grid ;
+   grid-template-columns: 1fr;
 }
-.portfolio-More{
-   text-align: right ;
-
+@media (min-width:768px){
+   .portfolio-cards{
+      display:grid ;
+      grid-template-columns: 1fr 1fr;
+   }
 }
-
+@media (min-width:1024px){
+   .portfolio-cards{
+      height: 100vh;
+      align-items: center;
+      display:grid ;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+}

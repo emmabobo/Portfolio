@@ -1,6 +1,6 @@
-.Experties_con{
-    display: grid;
-    gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100vh;
+@media (min-width: 768px){
+    .Experties_con{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
