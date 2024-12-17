@@ -1,36 +1,36 @@
-.ContactForm{
-    height: 100vh;
-    width: 100%;
-  }
-form {
-    margin-top: 20px;
-    width: inherit;
-  }
+.contact{
+  padding: 1.5em;
+}
+.contact form{
+  border: 2px solid green;
   
-  .formRow {
-    margin: 0px 0 20px 0;
+
+}
+.contact form h2{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+.feild{
+  width: 100%;
+}
+.input-box label{
+  font-size: 2em;
+
+}
+.input-box .field{
+  width: 100%;
+  border: 2px solid green;
+  outline: none;
+  background: rgb(41, 41, 43);
+  border-radius: 5px;
+  padding:1em;
+  margin-bottom: 1em;
+  color: white;
+  margin-top: 1em;
+
   }
-  
-  .formInput {
-    padding: 15px 10px;
-  }
-  
-  .errorMessage {
-    color: #f45532;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .submit-btn {
-    padding: 15px 50px;
-    border-radius: 10px;
-    margin-bottom: 2px;
-  }
-  
-  @media (max-width: 768px) {
-    .submit-message {
-      width: 125px;
-      margin-left: 200px;
-    }
+  .input-box .field .mess{
+    height: 200px;
+    resize: none;
   }

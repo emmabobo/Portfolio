@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "@emailjs/browser": "^4.4.1"
-  }
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Website portfolio using React(Responsive site)",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

@@ -23,7 +23,6 @@ function Portfolio() {
 
       <div className="portfolio-More">
         <button className="btn"><a href="" >More</a>
-          
         </button>
       </div>
       

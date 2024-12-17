@@ -1,6 +1,17 @@
-@media (min-width: 768px){
-    .Experties_con{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+.Experties-con{
+    position: relative;
+    
+    
+}
+.ExHeader{
+    color: rgb(80, 79, 79);
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: .5em;
+    z-index: 1;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 4em;
+
 }
