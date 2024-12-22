@@ -34,7 +34,7 @@ body{
     display: flex;
         background: linear-gradient(to right, rgb(21, 4, 127),rgb(63, 1, 43));
         border: none;
-        padding: .6em 1.1em;
+        padding: .4em 1.1em;
         border-radius: .7em;
         color: var(--text-color);
         cursor: pointer;
@@ -52,6 +52,9 @@ a{
     
 }
 @media (min-width: 768px){
-   
+    .btn:hover{
+        background: linear-gradient(to right, rgb(40, 10, 231),rgb(128, 3, 88));
+        color: var(--text-color);
+    }
 }
 

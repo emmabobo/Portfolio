@@ -60,6 +60,9 @@
         gap: 2em;
         font-size: 2.5em;
     }
+    .btn-cv{
+        display: inline-flex;
+    }
    
     
     .menu-icon_container{

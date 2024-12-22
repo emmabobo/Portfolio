@@ -13,10 +13,6 @@
     align-items: center;
     /*linear-gradient(rgba(8,0,58,.7),rgba(8,0,58,.7)) */
 }
-.btn-hero:hover{
-    background: linear-gradient(to right, rgb(40, 10, 231),rgb(128, 3, 88));
-    color: var(--text-color);
-}
 
 .hero h1{
     font-size: 3em;
@@ -59,6 +55,7 @@
         font-size: 1.6em ;
         line-height: 3em;
     }
+    
 }
 @media (min-width: 1024px){
    
