@@ -1,11 +1,23 @@
-
+.portfolio-header{
+   text-align: center;
+   font-size: 5em;
+   text-transform: uppercase;
+   font-weight: 600;
+   text-decoration: underline;
+   color: rgb(43, 42, 42);
+}
 .portfolio-cards{
+   position: relative;
+   top:-2em;
    display:grid ;
+   gap: 2em;
    grid-template-columns: 1fr;
 }
+
 @media (min-width:768px){
    .portfolio-cards{
       display:grid ;
+      gap: 4em;
       grid-template-columns: 1fr 1fr;
    }
 }
