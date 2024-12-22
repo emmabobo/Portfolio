@@ -14,7 +14,7 @@ function Hero() {
     <p>
         Designing and bringing your project Alive and responsive 
     </p>
-    <button className='btnn btn btn2'>
+    <button className='btn-hero btn btn2'>
         Explore more 
     </button>
    </div>

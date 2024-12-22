@@ -3,9 +3,21 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin: 2em;
+    text-align: center;
+    padding-bottom: 2em;
     
-    border: 2px red solid;
 }
 .E-icon{
-   width: 10em; 
+   width: 8em; 
+}
+.E-header{
+    font-size: 1.2em;
+    margin: .2em 0;
+    
+}
+.E-para{
+    font-style: italic;
+    text-align: justify;
+    width: 70%;
 }

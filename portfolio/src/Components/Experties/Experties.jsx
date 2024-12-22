@@ -2,6 +2,7 @@
  import "./Experties.css"
  import ExpertiseCard from './ExpertiseCard/ExpertiseCard'
  import Eicon1 from "../../assets/mail-icon.png"
+ import UIicon from "../../assets/ui_icon.gif"
  
 
  
@@ -21,11 +22,17 @@
 
 
    return (
-     <div className='Experties_con container'>
+     <div className='container Experties-con'>
+        
+      <div className="Experties">
+        <ExpertiseCard Eicon={UIicon} Eheader={Eheader1} Epara={Eparagrph1}/>
         <ExpertiseCard Eicon={Eicon1} Eheader={Eheader1} Epara={Eparagrph1}/>
         <ExpertiseCard Eicon={Eicon1} Eheader={Eheader1} Epara={Eparagrph1}/>
-        <ExpertiseCard Eicon={Eicon1} Eheader={Eheader1} Epara={Eparagrph1}/>
-     </div>
+      </div>
+      <div className="ExHeader">
+          Expertiest
+      </div>
+    </div>
    )
  }
  

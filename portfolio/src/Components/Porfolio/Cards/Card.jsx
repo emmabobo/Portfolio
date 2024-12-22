@@ -16,9 +16,16 @@ function Card(props) {
         <h1 className="card-head">
           {props.CardHeader} 
         </h1>
+        <hr />
         <p className="card-para">
           {props.CardParagraph}
         </p>
+      </div>
+
+      <div className='Ex-link'>
+        <i></i>
+        <i></i>
+        <i></i>
       </div>
     </div>
   );
