@@ -1,5 +1,5 @@
-.nav-container{
-    background: var(--primary-color);
+.nav-container {
+    background: var(--primary-color); /* Assuming you have a CSS variable defined for --primary-color */
     width: 100%;
     height: 5rem;
     display: flex;
@@ -7,94 +7,158 @@
     justify-content: center;
     position: sticky;
     top: 0;
-    z-index: 10;
-    
-}
-.navbar{
+    z-index: 100;
+  }
+  
+  .navbar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-}
-
-.menu-icon{
-    width: 2.5em;
-}
-.logo_mobile{
-    width: 3.5em;
-}
-
-.mobileView{
+  }
+  
+  .menu-icon {
     display: none;
-
-    background: var(--primary-color);
+    cursor: pointer;
+    width: 2.5em;
+  }
+  
+  .logo_mobile {
+    width: 3.5em;
+  }
+  
+  .mobileView {
+    width: 100%;
+    background-color: rgba(9, 9, 9, 0.819);
     position: absolute;
     top: 5em;
     left: 0;
-    right: 0;
-    
-}
+    opacity: 0;
+    z-index: 99;
+    transition:all 0.5s ease-in-out; /* Added smooth transition for mobileView */
+  }
+  
+  .mobileView.active {
+    opacity: 100;
 
-.mobile-nav-list{
-    list-style: none;
+  }
+  
+  .mobile-nav-list {
+    margin: 1em auto 2em;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+  }
+  
+  .mobile-list:last-child {
+    margin-top: 1em;
+  }
+  
+  .mobile-list-link {
+    text-decoration: none;
+    font-size: 1.4em;
     line-height: 2em;
-    font-size: 2em;
-}
-
-.list-desktop, .btn-cv,.logo_wide {
+  }
+  
+  .btn-mobile {
+    border: none;
+    padding: 0.4em 0.5em;
+    border-radius: 0.7em;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .hamburger-menu-raw {
+    cursor: pointer;
+  }
+  
+  .hamburger-menu-raw .bar {
+    display: block;
+    background-color: white;
+    width: 2em;
+    height: 0.3em;
+    margin: 5px auto;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .hamburger-menu-raw .bar:nth-child(3) {
+    width: 30px;
+  }
+  
+  .hamburger-menu-raw.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu-raw.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger-menu-raw.active .bar:nth-child(3) {
+    width: 2em;
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .list-desktop,
+  .btn-cv,
+  .logo_wide {
     display: none;
-}
-@media (min-width: 768px){
-    .menu-icon{
-        display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-icon {
+      display: none;
     }
-    .list-desktop{
-        display: block;
+  
+    .list-desktop {
+      display: block;
     }
-    .nav-list{
-        text-decoration: none;
-        list-style: none;
-        display: flex;
-        gap: 2em;
-        font-size: 2.5em;
+  
+    .nav-list {
+      text-decoration: none;
+      list-style: none;
+      display: flex;
+      gap: 2em;
+      font-size: 2.5em;
     }
-    .btn-cv{
-        display: inline-flex;
+  
+    .btn-cv {
+      display: inline-flex;
     }
-   
-    
-    .menu-icon_container{
-        display: none;
+  
+    .menu-icon_container {
+      display: none;
     }
-}
-@media (min-width: 1024px){
-    .nav-list .list .list-link{
-        color: var(--text-color-grey);
-        font-size: 1.2em;
-        font-weight: bold;
+  }
+  
+  @media (min-width: 1024px) {
+    .nav-list .list .list-link {
+      color: var(--text-color-grey); /* Assuming you have a CSS variable defined for --text-color-grey */
+      font-size: 1.2em;
+      font-weight: bold;
     }
-    
-    .nav-list .list .list-link:hover{
-        color: var(--text-color);
-        border-bottom: 4px solid blue;
-        
+  
+    .nav-list .list .list-link:hover {
+      color: var(--text-color); /* Assuming you have a CSS variable defined for --text-color */
+      border-bottom: 4px solid blue;
     }
+  
     .logo_mobile {
-        display: none;
+      display: none;
     }
-    .logo_wide{
-        display: block;
-        width: 13em;
+  
+    .logo_wide {
+      display: block;
+      width: 13em;
     }
-    .btn-cv{
-        display: flex;
-        background: linear-gradient(to right, rgb(21, 4, 127),rgb(63, 1, 43));
-        color: var(--text-color);
+  
+    .btn-cv {
+      display: flex;
+      background: linear-gradient(to right, rgb(21, 4, 127), rgb(63, 1, 43));
+      color: var(--text-color);
     }
-    .btn-cv:hover{
-        background: linear-gradient(to right, rgb(40, 10, 231),rgb(128, 3, 88));
+  
+    .btn-cv:hover {
+      background: linear-gradient(to right, rgb(40, 10, 231), rgb(128, 3, 88));
     }
-}
-
+  }
