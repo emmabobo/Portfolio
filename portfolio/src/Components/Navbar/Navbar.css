@@ -1,7 +1,7 @@
 .nav-container {
     background: var(--primary-color); /* Assuming you have a CSS variable defined for --primary-color */
     width: 100%;
-    height: 5rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,18 +20,18 @@
   .menu-icon {
     display: none;
     cursor: pointer;
-    width: 2.5em;
+    width: 2.5rem;
   }
   
   .logo_mobile {
-    width: 3.5em;
+    width: 3rem;
   }
   
   .mobileView {
     width: 100%;
     background-color: rgba(9, 9, 9, 0.819);
     position: absolute;
-    top: 5em;
+    top: 4rem;
     left: 0;
     opacity: 0;
     z-index: 99;
@@ -44,29 +44,24 @@
   }
   
   .mobile-nav-list {
-    margin: 1em auto 2em;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
   }
   
   .mobile-list:last-child {
-    margin-top: 1em;
+    margin-top: .5rem;
   }
   
   .mobile-list-link {
     text-decoration: none;
-    font-size: 1.4em;
-    line-height: 2em;
+    font-size: 0.8rem;
+    line-height: 2rem;
   }
   
   .btn-mobile {
-    border: none;
-    padding: 0.4em 0.5em;
-    border-radius: 0.7em;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1em;
+    font-size: 0.7rem;
   }
   
   .hamburger-menu-raw {
@@ -76,27 +71,28 @@
   .hamburger-menu-raw .bar {
     display: block;
     background-color: white;
-    width: 2em;
-    height: 0.3em;
-    margin: 5px auto;
+    width: 2rem;
+    height: 0.3rem;
+    margin: .2rem auto;
     transition: all 0.6s ease-in-out;
   }
-  
   .hamburger-menu-raw .bar:nth-child(3) {
-    width: 30px;
+    width: 2.5rem;
   }
+  
   
   .hamburger-menu-raw.active .bar:nth-child(2) {
     opacity: 0;
   }
   
   .hamburger-menu-raw.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    width: 2rem;
+    transform: translateY(.5rem) rotate(45deg);
   }
   
   .hamburger-menu-raw.active .bar:nth-child(3) {
-    width: 2em;
-    transform: translateY(-8px) rotate(-45deg);
+    width: 2rem;
+    transform: translateY(-.5rem) rotate(-45deg);
   }
   
   .list-desktop,
@@ -104,8 +100,16 @@
   .logo_wide {
     display: none;
   }
+
+  @media (min-width: 425px){
+   
+
+  }
   
   @media (min-width: 768px) {
+    .hamburger-menu-raw{
+        display: none;
+    }
     .menu-icon {
       display: none;
     }
@@ -113,17 +117,28 @@
     .list-desktop {
       display: block;
     }
+    .mobile-nav-list{
+        display: none;
+    }
   
     .nav-list {
       text-decoration: none;
       list-style: none;
       display: flex;
-      gap: 2em;
-      font-size: 2.5em;
+      gap: 1rem;
+      
+    }
+    .nav-list .list-link{
+        font-size: .8rem;
+        color: var(--text-color-grey);
+    }
+    .nav-list .list-link:active{
+        color: var(--text-color);
     }
   
     .btn-cv {
       display: inline-flex;
+      font-size: .7rem;
     }
   
     .menu-icon_container {
@@ -132,10 +147,10 @@
   }
   
   @media (min-width: 1024px) {
+
     .nav-list .list .list-link {
-      color: var(--text-color-grey); /* Assuming you have a CSS variable defined for --text-color-grey */
-      font-size: 1.2em;
-      font-weight: bold;
+      font-size: .9rem;
+
     }
   
     .nav-list .list .list-link:hover {
@@ -149,7 +164,7 @@
   
     .logo_wide {
       display: block;
-      width: 13em;
+      width: 9rem;
     }
   
     .btn-cv {

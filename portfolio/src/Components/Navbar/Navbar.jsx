@@ -41,7 +41,7 @@ function Navbar() {
             <li className='mobile-list'><a className={`mobile-list-link ${isMenuOpen ? 'active' : ''}`} href="#" onClick={toggleMenu}>Experience</a></li>
             <li className='mobile-list'><a className={`mobile-list-link ${isMenuOpen ? 'active' : ''}`} href="#" onClick={toggleMenu} >Contact</a></li>
             <li className={`mobile-list ${isMenuOpen ? 'active' : ''}`} href="#" onClick={toggleMenu} >
-              <button className='btn-mobile btn-cv-mobile'>Download CV</button>
+              <button className='btn btn-mobile btn-cv-mobile'>Download CV</button>
             </li>
           </ul>
         </div>

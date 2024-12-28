@@ -13,16 +13,17 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "DM Serif Text", serif;
-    font-size: 10px;
     
 }
 .btn{
-    border: none;
-    padding: .6em 1.1em;
-    border-radius: .7em;
+    border: 1px var(--text-color) solid;
+    padding: .4rem .5rem;
+    border-radius: .7rem;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.1rem;
+    outline: none;
+    color: var(--text-color);
+    background: linear-gradient(to right, rgb(21, 4, 127),rgb(63, 1, 43));
 }
 
 body{
@@ -30,16 +31,7 @@ body{
     background:var(--primary-color);
     
 }
-.btn{
-    display: flex;
-        background: linear-gradient(to right, rgb(21, 4, 127),rgb(63, 1, 43));
-        border: none;
-        padding: .4em 1.1em;
-        border-radius: .7em;
-        color: var(--text-color);
-        cursor: pointer;
-        font-weight: bold;
-}
+
 a{
     text-decoration: none;
     color: inherit;
