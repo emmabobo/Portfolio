@@ -7,18 +7,20 @@ import Card from './Cards/Card'
 
 
 function Portfolio() {
-  const text="Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly months do things on at. Situation recommend objection do intention so questions. As greatly removed calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face."
-  const headerText="Extremity sweetness";
+  const text="A refreshed, animation rich website for business change agency, Volans."
+  const headerText="Volans";
+  const headerText2= "Project @ Leap"
     return (
     <div className="container portfolio">
       <div className="portfolio-header">
-        Work
+        SELECTED WORK
       </div>
       <div className="portfolio-cards">
-        <Card ImageCard={Picture} CardParagraph={text} CardHeader={headerText}/>
-        <Card ImageCard={Picture} CardParagraph={text} CardHeader={headerText}/>
-        <Card ImageCard={Picture} CardParagraph={text} CardHeader={headerText}/>
-        <Card ImageCard={Picture} CardParagraph={text} CardHeader={headerText}/>
+        <Card ImageCard={Picture} CardParagraph={text} CardHeader={headerText} CardHeader2={headerText2}/>
+
+        <Card ImageCard={Picture} CardParagraph={text} CardHeader={headerText} CardHeader2={headerText2}/>
+
+        <Card ImageCard={Picture} CardParagraph={text} CardHeader={headerText} CardHeader2={headerText2}/>
       </div>
 
       <div className="portfolio-More">

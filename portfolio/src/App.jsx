@@ -12,6 +12,8 @@ function App() {
     <div>
       <Navbar/>
       <Hero />
+      
+
       <Portfolio/>
       {/*<Experties/>
       <Contact/>

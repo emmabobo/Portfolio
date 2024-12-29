@@ -8,5 +8,6 @@
     --test-color1:rgb(35, 11, 67);
     --test-color2:rgb(3, 18, 106);
     --background-button: linear-gradient(to left, #120113, #2a07db);
-
+    --font-nato:"Noto Sans", serif;
+    --font-pop:"Poppins", serif;
 }
