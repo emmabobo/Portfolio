@@ -13,9 +13,11 @@ function App() {
       <Navbar/>
       <Hero />
       <Portfolio/>
-      <Footer/>
+      
       {/*<Experties/>
+      <Footer/>
       <Contact/>
+      
       */}
     </div>
   )
