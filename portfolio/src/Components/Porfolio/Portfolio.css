@@ -1,4 +1,7 @@
 .portfolio{
+   background-color: rgb(14, 13, 13);
+   padding-top: 2rem;
+   padding-bottom: 2rem;
    
 }
 .portfolio-header{
@@ -17,6 +20,7 @@
    
 }
 .portfolio-More{
+   margin: 1.2rem 0;
    display: flex;
    justify-content: end;
 }
@@ -29,4 +33,9 @@
    }
 }
 @media (min-width:1024px){
+   .portfolio-cards{
+      display:grid ;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+   }
 }

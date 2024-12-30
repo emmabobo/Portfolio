@@ -55,4 +55,7 @@ a{
         color: var(--text-color);
     }
 }
+@media (max-width:1440){
+    
+}
 

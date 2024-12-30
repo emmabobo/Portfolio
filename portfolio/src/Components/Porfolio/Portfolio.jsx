@@ -21,6 +21,8 @@ function Portfolio() {
         <Card ImageCard={Picture} CardParagraph={text} CardHeader={headerText} CardHeader2={headerText2}/>
 
         <Card ImageCard={Picture} CardParagraph={text} CardHeader={headerText} CardHeader2={headerText2}/>
+
+        <Card ImageCard={Picture} CardParagraph={text} CardHeader={headerText} CardHeader2={headerText2}/>
       </div>
 
       <div className="portfolio-More">

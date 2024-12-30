@@ -9,6 +9,9 @@
     top: 0;
     z-index: 100;
   }
+  .nav-list .list:nth-child(even){
+    display: none;
+  }
   
   .navbar {
     width: 100%;

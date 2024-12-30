@@ -1,19 +1,32 @@
 .footer{
-
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
 }
 .row{
-    margin-top: 2em;
+   
+
+}
+.footer-copywrite{
+
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    
+    
+}
+.footer-copywrite div{
+    
+    font-size: .7rem;
 }
 .footer-copywrite img{
-    margin-top: 2em;
-    width: 2em;
+    margin-top: 2rem;
+    width: 3rem;
 }
 .footer-icons{
-    margin-top: 2em;
-    display: flex;
-    justify-content: space-between;
     list-style: none;
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
