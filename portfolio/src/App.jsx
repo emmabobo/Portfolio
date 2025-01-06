@@ -1,25 +1,41 @@
 import React from 'react'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
 import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
-import Portfolio from './Components/Porfolio/Portfolio'
-import Footer from './Components/Footer/Footer'
-import Experties from './Components/Experties/Experties'
-import Contact from './Components/Contact/Contact'
+import Home from "./Components/Pages/Home/Home.jsx"
+
 
 
 function App() {
   return ( 
-    <div>
+    <Router>
       <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="Contact" element={<Contact />} />
+        <Route path="Experience" element={<Experience />} />
+      </Routes>
+
+      
+      
+      {/*
       <Hero />
       <Portfolio/>
-      
-      {/*<Experties/>
+      <Experties/>
       <Footer/>
       <Contact/>
       
       */}
-    </div>
+    
+
+
+    </Router>
+ 
+    
   )
 }
 
