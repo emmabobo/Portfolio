@@ -5,8 +5,8 @@ import {
   Route
 } from "react-router-dom";
 
-import Navbar from './Components/Navbar/Navbar'
-import Home from "./Components/Pages/Home/Home.jsx"
+import Home from './Components/Pages/Home/Home';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -16,23 +16,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="Contact" element={<Contact />} />
-        <Route path="Experience" element={<Experience />} />
       </Routes>
-
-      
-      
-      {/*
-      <Hero />
-      <Portfolio/>
-      <Experties/>
       <Footer/>
-      <Contact/>
-      
-      */}
-    
-
-
     </Router>
  
     

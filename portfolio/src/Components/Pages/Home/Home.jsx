@@ -1,15 +1,18 @@
 import React from 'react'
 import {
-    BrowserRouter as Router,
     Routes,
     Route
   } from "react-router-dom";
+import  Hero from '../../Hero/Hero';
+import Eperience from '../../Experience/Experience';
+
 
 function Home() {
   return (
-    <Router>
-        
-    </Router>
+    <Routes>
+      <Route path="/" element={<Hero />} />
+      <Route path="experience" element={<Eperience />} />
+    </Routes>
   )
 }
 
